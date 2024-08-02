@@ -8,11 +8,10 @@ function App() {
   return (
     <Router>
       <div>
-        <Navbar /> {/* Include the Navbar component */}
+        <Navbar />
         <Routes>
           <Route path="/" element={<Hero />} />
-          {/* Additional routes can be added here */}
-        </Routes>
+          </Routes>
       </div>
     </Router>
   );

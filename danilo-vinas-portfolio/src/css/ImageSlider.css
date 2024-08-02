@@ -1,0 +1,13 @@
+/* src/css/ImageSlider.css */
+
+.image-slider {
+    width: 100%; /* Full width of the container */
+    max-width: 1200px; /* Optional: max width for large screens */
+    margin: auto; /* Center align */
+  }
+  
+  .image-slider img {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
