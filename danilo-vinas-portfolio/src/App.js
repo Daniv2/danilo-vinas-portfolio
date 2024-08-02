@@ -2,30 +2,17 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import Projects from './components/Projects';
-import AboutMe from './components/AboutMe';
-import Contact from './components/Contact';
-import Design from './components/Design';
-import Develop from './components/Develop';
-import Blog from './components/Blog';
-import Footer from './components/Footer';
 import './App.css';
 
 function App() {
   return (
     <Router>
       <div>
-        <Navbar />
+        <Navbar /> {/* Include the Navbar component */}
         <Routes>
           <Route path="/" element={<Hero />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/about" element={<AboutMe />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/design" element={<Design />} />
-          <Route path="/develop" element={<Develop />} />
-          <Route path="/blog" element={<Blog />} />
+          {/* Additional routes can be added here */}
         </Routes>
-        <Footer />
       </div>
     </Router>
   );
