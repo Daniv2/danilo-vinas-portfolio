@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero.js';
+import Hero from './components/Hero';
 import Projects from './components/Projects';
 import AboutMe from './components/AboutMe';
 import Contact from './components/Contact';
@@ -9,6 +9,7 @@ import Design from './components/Design';
 import Develop from './components/Develop';
 import Blog from './components/Blog';
 import Footer from './components/Footer';
+import './App.css';
 
 function App() {
   return (
