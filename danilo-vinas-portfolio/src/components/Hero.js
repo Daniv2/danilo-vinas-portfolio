@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../css/Hero.css';
+import '../css/Hero.css';  // General styles for Hero
+import ImageSlider from './ImageSlider';
 import dos from '../img/dos.jpeg';
 import uno from '../img/uno.jpeg';
 import tres from '../img/tres.jpeg';
 import fourt from '../img/fourt.jpeg';
-import ImageSlider from './ImageSlider';
 
 const Hero = () => {
   return (
@@ -29,35 +29,35 @@ const Hero = () => {
         </div>
       </div>
       <div className="sections">
-        <div className="section" id="projects">
-          <h2>Projects</h2>
+        <div className="section section-projects" id="projects">
+          <h2 className="section-title-projects">Projects</h2>
           <ImageSlider />
-          <Link to="/projects" className="section-button">See All Projects</Link>
+          <Link to="/projects" className="section-button-projects">See All Projects</Link>
         </div>
-        <div className="section" id="about">
-          <h2>About Me</h2>
+        <div className="section section-about" id="about">
+          <h2 className="section-title-about">About Me</h2>
           <p>Learn more about my background and skills.</p>
-          <Link to="/about" className="section-button">Read More</Link>
+          <Link to="/about" className="section-button-about">Read More</Link>
         </div>
-        <div className="section" id="contact">
-          <h2>Contact</h2>
+        <div className="section section-contact" id="contact">
+          <h2 className="section-title-contact">Contact</h2>
           <p>Get in touch with me for opportunities and collaborations.</p>
-          <Link to="/contact" className="section-button">Contact Me</Link>
+          <Link to="/contact" className="section-button-contact">Contact Me</Link>
         </div>
-        <div className="section" id="design">
-          <h2>Design</h2>
+        <div className="section section-design" id="design">
+          <h2 className="section-title-design">Design</h2>
           <p>Explore my design projects and inspirations.</p>
-          <Link to="/design" className="section-button">See Designs</Link>
+          <Link to="/design" className="section-button-design">See Designs</Link>
         </div>
-        <div className="section" id="develop">
-          <h2>Develop</h2>
+        <div className="section section-develop" id="develop">
+          <h2 className="section-title-develop">Develop</h2>
           <p>Discover my development work and technologies used.</p>
-          <Link to="/develop" className="section-button">View Development</Link>
+          <Link to="/develop" className="section-button-develop">View Development</Link>
         </div>
-        <div className="section" id="blog">
-          <h2>Blog</h2>
+        <div className="section section-blog" id="blog">
+          <h2 className="section-title-blog">Blog</h2>
           <p>Read my thoughts on web design and development.</p>
-          <Link to="/blog" className="section-button">Read Blog</Link>
+          <Link to="/blog" className="section-button-blog">Read Blog</Link>
         </div>
       </div>
     </section>

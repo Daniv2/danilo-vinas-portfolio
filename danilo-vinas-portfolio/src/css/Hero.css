@@ -1,111 +1,85 @@
 /* src/css/Hero.css */
-@import "~slick-carousel/slick/slick.css";
-@import "~slick-carousel/slick/slick-theme.css";
+
 .hero {
-  display: flex;
-  flex-direction: column; /* Stack content vertically */
-  align-items: center; /* Center the content horizontally */
-  padding: 0; /* Remove padding around the section */
-  background-color: #f4f4f4; /* Light background for the section */
-}
-
-.image-container {
-  display: flex;
-  width: 100vw; /* Full width of the viewport */
-  height: 60vh; /* Shorter height of the viewport */
-}
-
-.image-wrapper {
-  position: relative; /* Position relative to contain the title */
-  flex: 1; /* Make each image take up equal space */     
-  overflow: hidden; /* Hide overflow content */
-  transition: transform 0.3s ease; /* Smooth transition for hover effect */
-}
-
-.image-wrapper img {
-  width: 100%; /* Full width of the wrapper */
-  height: 100%; /* Full height of the wrapper */
-  object-fit: cover; /* Cover the container without stretching */
-  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for hover effect */
-  filter: brightness(70%); /* Darken the images slightly */
-}
-
-.image-wrapper:hover {
-  transform: scale(1.05); /* Slightly scale up the image on hover */
-}
-
-.image-wrapper img:hover {
-  filter: brightness(100%); /* Lighten the images on hover */
-}
-
-.image-title {
-  position: absolute; /* Position the title absolutely on top of the image */
-  width: 100%;
-  padding: 10px;
-  color: white;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  text-align: center;
-  font-size: 1.2em;
-  transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
-}
-
-.title-projects {
-  top: 10%; /* Position near the top */
-}
-
-.title-about {
-  top: 50%; /* Center vertically */
-  transform: translateY(-50%); /* Adjust to center */
-}
-
-.title-contact {
-  bottom: 10%; /* Position near the bottom */
-}
-
-.title-blog {
-  top: 25%; /* Slightly down from the top */
-}
-
-.image-wrapper:hover .image-title {
-  transform: scale(1.1); /* Slightly scale up the title on hover */
-  color: red; /* Change title color to red on hover */
-}
-
-.sections {
-  display: flex;
-  flex-direction: column; /* Stack sections vertically */
-  align-items: center; /* Center the content horizontally */
-  width: 100%;
-  padding: 0; /* Remove padding around the section */
-}
-
-.section {
-  width: 100%; /* Full width of the parent container */
-  max-width: 1200px; /* Limit the maximum width */
-  padding: 40px; /* Padding inside each section */
-  background-color: #fff; /* Background color for each section */
-  border-radius: 8px; /* Rounded corners for sections */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  text-align: center;
-  box-sizing: border-box; /* Include padding and border in element's total width and height */
-}
-
-.section h2 {
-  margin-top: 0; /* Remove margin from the top of the heading */
-}
-
-.section-button {
-  display: inline-block;
-  margin-top: 10px; /* Space between the heading and the button */
-  padding: 8px 16px;
-  background-color: #28a745; /* Button background color */
-  color: white; /* Text color */
-  text-decoration: none; /* Remove underline from links */
-  border-radius: 4px; /* Rounded corners */
-  font-size: 0.9em; /* Font size */
-  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-}
-
-.section-button:hover {
-  background-color: #218838; /* Darker button background color on hover */
-}
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center the content horizontally */
+    padding: 0; /* Remove padding around the section */
+    background-color: #f4f4f4; /* Light background for the section */
+  }
+  
+  .image-container {
+    display: flex;
+    width: 100vw; /* Full width of the viewport */
+    height: 75vh; /* Height of the viewport */
+  }
+  
+  .image-wrapper {
+    position: relative; /* Position relative to contain the title */
+    flex: 1; /* Make each image take up equal space */
+    overflow: hidden; /* Hide overflow content */
+  }
+  
+  .image-wrapper img {
+    width: 100%; /* Full width of the wrapper */
+    height: 100%; /* Full height of the wrapper */
+    object-fit: cover; /* Cover the container without stretching */
+    transition: filter 0.3s ease; /* Smooth transition for hover effect */
+    filter: brightness(70%); /* Darken the images slightly */
+  }
+  
+  .image-wrapper img:hover {
+    filter: brightness(100%); /* Lighten the images on hover */
+  }
+  
+  .image-title {
+    position: absolute; /* Position the title absolutely on top of the image */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    text-align: center;
+    font-size: 1.2em;
+  }
+  
+  .sections {
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center; /* Center the content horizontally */
+    width: 100%;
+    padding: 0; /* Remove padding around the section */
+  }
+  
+  .section {
+    width: 100%; /* Full width of the parent container */
+    max-width: 1200px; /* Limit the maximum width */
+    padding: 40px; /* Padding inside each section */
+    background-color: #fff; /* Background color for each section */
+    border-radius: 8px; /* Rounded corners for sections */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+  }
+  
+  .section h2 {
+    margin-top: 0; /* Remove margin from the top of the heading */
+  }
+  
+  .section-button {
+    display: inline-block;
+    margin-top: 10px; /* Space between the heading and the button */
+    padding: 8px 16px;
+    background-color: #28a745; /* Button background color */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 0.9em; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .section-button:hover {
+    background-color: #218838; /* Darker button background color on hover */
+  }
+  

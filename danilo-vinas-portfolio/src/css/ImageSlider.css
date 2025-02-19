@@ -1,13 +1,32 @@
-/* src/css/ImageSlider.css */
-
+/* Container for the Image Slider */
 .image-slider {
     width: 100%; /* Full width of the container */
-    max-width: 1200px; /* Optional: max width for large screens */
+    max-width: 736px; /* Maximum width for images */
     margin: auto; /* Center align */
+    overflow: hidden; /* Hide overflow */
+    position: relative; /* Position relative for dot positioning */
   }
   
-  .image-slider img {
-    width: 100%; /* Full width of the container */
-    height: auto; /* Maintain aspect ratio */
+  /* Ensure each slide takes fixed width and height */
+  .image-slider .slick-slide {
+    display: flex; /* Flexbox for centering content */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    height: 1104px; /* Fixed height for slider */
+    /* Add a bit of extra space for margin and peek effect */
+    padding: 0 20px; /* Space on each side of the slider */
+  }
+  
+  /* Adjust the size of the images */
+  .image-slider .slick-slide img {
+    width: 776px; /* Slightly larger width to show peek effect */
+    height: 1104px; /* Fixed height */
+    object-fit: cover; /* Cover the container without stretching */
+    margin: 0 20px; /* Margin to show part of adjacent images */
+  }
+  
+  /* Adjust the position of the dots */
+  .slick-dots {
+    bottom: 10px; /* Adjust dot position */
   }
   
